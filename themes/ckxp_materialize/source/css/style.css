@@ -1,0 +1,32 @@
+html {
+  background: url(../data/sommertour.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+  max-height: 1080px;
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    min-width: 420px;
+  }
+  
+  @media screen and (max-width: 990px){
+    header{
+      min-height: 0px;
+    }
+  }
+.overlap {
+  margin-top: 0px;
+  background-color: rgba(166, 201, 231, 0.6);
+  border-radius: 10px;
+  padding: 4px 4px 4px 4px;
+  
+}
+  
+  
