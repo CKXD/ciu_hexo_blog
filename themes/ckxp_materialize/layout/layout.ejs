@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<%- partial('_partials/head') %>    
+<body>
+
+      <header>
+        <!-- NAVIGATION -->
+        <!-- DROPDOWN --><!-- MOBILE COLLAPSE -->
+        
+          
+          <div class="navbar-fixed">  
+            
+            <nav class="transparent">
+              <div class="nav-wrapper">
+                <div class="container">  
+                      <a href="#!" class="brand-logo text-yellow text-lighten 2"><img src="data/CIU.png" alt="Logo" srcset="" height="64px"> </a>
+                      <a href="#" data-activates="mobile-demo" class="btn-floating btn-large grey hide-on-large-only"><i class="material-icons grey lighten-3 black-text">menu</i></a>
+                      <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="" class="dropdown-button" data-activates="dropdown1">Kategorien<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li><a href="#">Über uns</a></li>
+                      </ul>
+                  </div>  
+              </div>  
+            </nav>   
+         
+          
+         </div>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#!">Wohnmobil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Radtourem</a></li>
+                    <li><a href="#!">Wettkämpfe</a></li>
+                    <li class="divider"></li> 
+                    <li><a href="#!">Allerlei</a></li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#">Start</a></li> 
+                    <li><a href="#!">Wohnmobil</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">Radtourem</a></li>
+                    <li><a href="#!">Wettkämpfe</a></li>
+                    <li class="divider"></li> 
+                    <li><a href="#!">Allerlei</a></li>
+                    <li><a href="#">Über uns</a></li>
+                </ul>
+                 
+             
+    </header>
+      
+    <main>
+        <div class="container" >
+           <div class="overlap">
+                <div class="col s8 l6"> 
+                  <!-- 
+                    <div class="card small">
+                        <div class="card-image">
+                          <img src="http://materializecss.com/images/sample-1.jpg">
+                          <span class="card-title">WoMo-Tagebuch</span>
+                        </div>
+                        <div class="card-content">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptatum soluta aspernatur quod quaerat saepe accusamus ducimus dolore commodi, rem.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div> -->
+                      <div class=transparent>
+                        <H1>Tag 1</H1>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        <p class="flow-text">10 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum dolores explicabo nostrum nihil recusandae hic aliquid totam, excepturi qui vitae sint ab mollitia necessitatibus porro iure voluptates. Non, itaque laboriosam.</p>
+                        
+
+                      </div>
+
+                </div>
+                
+              </div>
+            
+        </div>
+    </main>
+    <footer class="page-footer transparent">
+         <div class="footer-copyright">
+          <div class="container">
+          © 2019 Copyright Christoph Ketzer
+          <a class="grey-text text-lighten-4 right" href="#!">Impressum</a>
+          </div>
+        </div>
+      </footer>
+                
+        
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+       <script>
+          $(".btn-floating").sideNav();
+       </script>
+    
+</body>
+</html>
