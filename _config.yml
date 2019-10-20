@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: Christoph und Ina unterwegs
+subtitle: 
+description: Herzlich Willkommen auf unserem Blog, hier geht es um alles was uns bewegt und wir sind viel in Bewegung, sei es sportlich zu Fuß, per Rad oder im Wasser, aber es geht auch um unsere Wohnmobiltouren und sonstigen Hobbys.
 keywords:
-author: John Doe
-language: en
+author: Christoph Ketzer
+language: de
 timezone:
 
 # URL
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: ckxp_materialize
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
