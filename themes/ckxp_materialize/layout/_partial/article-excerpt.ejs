@@ -1,0 +1,18 @@
+<div class="col s10 offset-s1 indexcontent">
+        
+            <span><h3><a href="<%- config.root %><%- item.path %>">
+                <%- item.title %>
+            </a></span></h3>
+            <!-- Content -->
+            <p><%- item.excerpt || item.content %></p>
+            <!-- Only display the Read More link if we are displaying an excerpt -->
+        <% if(item.excerpt) { %>
+            <a href="<%- config.root %><%- item.path %>">
+                    <%= theme.excerpt_link %>
+                </a>
+        <% } %>
+         
+        
+</div>
+
+ 

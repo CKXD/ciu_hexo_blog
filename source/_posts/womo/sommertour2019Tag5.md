@@ -4,7 +4,9 @@ date: 2019-07-17T09:35:00+02:00
 draft: false
 km: km
 ort: Iserlohn
-categories: [Wohnmobiltour, Rennradtour]
+categories: 
+- Wohnmobiltour 
+- Rennradtour
 tags: [Wohnmobil, Hammelburg, ]
 series: [Sommertour 2019]
 ---

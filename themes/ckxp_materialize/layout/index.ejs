@@ -2,24 +2,32 @@
         <br>
         <div class="col s12"><H3 class="center-align"><%= config.title %></H3></div>
 
-        <div class="col s8 offset-s2"><span class="flow-text"><%= config.description %></span></div>
+        <div class="col s10 offset-s1"><span class="flow-text"><%= config.description %></span></div>
 </div>
+<br>
+<div class="row post">
+<% page.posts.each(function(item){ %>
+    <%- partial('_partial/article-excerpt', {item: item}) %>
+<% }); %>
+</div>
+<%- partial('_partial/pagination') %>
 
+ <!-- 
 <div class="row">
     <% site.posts.forEach(function(post){ %>
 
-    <div class="col s12 ">
-        <div class="card blue-grey darken-1">
+    <div class="col s12 m6 l4">
+        <div class="card light-blue darken-3">
         <div class="card-content white-text">
             <span class="card-title"><a href="<%- post.path %>"><%- post.title %></a></span>
-            <p><% post.content %> Hello</p>
+            <p><%- post.content %></p>
         </div>
         </div>
     </div>
 
     <% })%>
 </div>
-
+-->
     
     
     
