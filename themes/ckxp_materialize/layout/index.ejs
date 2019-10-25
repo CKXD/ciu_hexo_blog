@@ -1,34 +1,32 @@
-<div class="row">
-        <br>
-        <div class="col s12"><H3 class="center-align"><%= config.title %></H3></div>
-
-        <div class="col s10 offset-s1"><span class="flow-text"><%= config.description %></span></div>
-</div>
-<br>
-<div class="row post">
-<% page.posts.each(function(item){ %>
-    <%- partial('_partial/article-excerpt', {item: item}) %>
-<% }); %>
-</div>
-<%- partial('_partial/pagination') %>
-
- <!-- 
-<div class="row">
-    <% site.posts.forEach(function(post){ %>
-
-    <div class="col s12 m6 l4">
-        <div class="card light-blue darken-3">
-        <div class="card-content white-text">
-            <span class="card-title"><a href="<%- post.path %>"><%- post.title %></a></span>
-            <p><%- post.content %></p>
-        </div>
-        </div>
+<div class="grid-container">
+    <div class="intro"> 
+        <h1><%= config.title %></h1>
+        <p><%= config.description %></p> 
     </div>
-
-    <% })%>
-</div>
--->
     
+    <div class="recent"> 
+        <% page.posts.each(function(item){ %>
+            <%- partial('_partial/article-excerpt', {item: item}) %>
+        <% }); %>
+        <%- partial('_partial/pagination') %>
+    </div>
+   
+    
+    <div class="cat"> 
+        <p>
+            <% site.categories.sort('name').each(function(item){ %>
+                <a href="<%- config.root %><%- item.path %>"> <%= item.name %></a>
+            <% }); %>
+        </p>
+    </div>
+    <div class="cloud"> 
+      <p> 
+            <% site.tags.sort('name').each(function(item){ %>
+                <a href="<%- config.root %><%- item.path %>" style="font-size: <%- Math.min(item.posts.length * 2 + 13, 30) %>px"><%= item.name %></a>
+            <% }); %>
+    </p>
+    </div>
+</div>
     
     
 

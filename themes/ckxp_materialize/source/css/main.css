@@ -1,0 +1,175 @@
+@charset "UTF-8";
+html {
+  background: url(/data/sommertour.jpg) no-repeat center center fixed;
+  background-size: cover;
+  max-height: 1080px; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 420px; }
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto; }
+
+@media screen and (max-width: 767px) {
+  header {
+    min-height: 0px; } }
+.overlap {
+  margin-top: 0px;
+  background-color: rgba(173, 216, 230, 0.5);
+  border-radius: 10px;
+  padding: 4px 4px 4px 4px; }
+
+.footer-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: black; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(200, auto);
+  grid-template-areas: "intro intro" "recent recent" "cat cloud";
+  background-color: rgba(173, 216, 230, 0.5);
+  grid-gap: 0.5rem; }
+
+@media screen and (max-width: 767px) {
+  /* Breite beträgt max. 767px */
+  .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: rgba(173, 216, 230, 0.5); } }
+.intro {
+  grid-area: intro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 0rem 0.5rem 0rem 0.5rem; }
+
+.recent {
+  grid-area: recent;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.cat {
+  grid-area: cat;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.cloud {
+  grid-area: cloud;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.blog-tags-container, .blog-categories-container {
+  margin-top: 30px;
+  font-size: 20px; }
+
+.blog-tags-container span.glyphicon, .blog-categories-container span.glyphicon {
+  margin-right: 20px; }
+
+.blog-post-title-archive {
+  margin-bottom: 5px;
+  font-size: 25px; }
+
+.blog-archive-title {
+  margin-bottom: 50px; }
+
+/* Grid Card für Postinhalt*/
+.grid-card-container {
+  display: grid;
+  grid-template-areas: "card_title card_title" "articlecontent articlecontent" "cat-post tag-post";
+  grid-template-columns: minmax(50rem, 50rem, 50rem);
+  grid-template-rows: minmax(50rem, auto, 50rem);
+  background-color: rgba(173, 216, 230, 0.5);
+  border-radius: 1rem;
+  margin: 0rem 1.5rem 0.2rem 1.5rem; }
+
+.cardtitle {
+  grid-area: card_title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 1.5rem 0rem 1.5rem; }
+
+.articlecontent {
+  grid-area: articlecontent;
+  padding: 0rem 1.5rem 0rem 1.5rem; }
+
+.cat-post {
+  grid-area: cat-post;
+  padding: 0rem 1.5rem 0rem 1.5rem; }
+
+.tag-post {
+  grid-area: tag-post;
+  padding: 0rem 1.5rem 0rem 1.5rem; }

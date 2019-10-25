@@ -1,0 +1,155 @@
+$overlaycolor: rgba(173, 216, 230, 0.5);
+
+html {
+    background: url(/data/sommertour.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height: 1080px;
+  
+  }
+  
+  body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      min-width: 420px;
+    }
+  main {
+    flex: 1 0 auto;
+  }   
+    @media screen and (max-width: 767px){
+      header{
+        min-height: 0px;
+      }
+    }
+  .overlap {
+    margin-top: 0px;
+    background-color:$overlaycolor;
+    border-radius: 10px;
+    padding: 4px 4px 4px 4px;
+    
+  }
+
+  .footer-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: black;
+    
+
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(200,auto);
+    grid-template-areas: "intro intro" "recent recent" "cat cloud";
+    background-color: $overlaycolor;
+    grid-gap: 0.5rem;
+  }
+  
+  
+  @media screen and (max-width: 767px) { 
+    /* Breite beträgt max. 767px */
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+      background-color: $overlaycolor;
+    }
+  }
+  
+  .intro { 
+      grid-area: intro; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      justify-content: start;
+          
+      margin: 0rem 0.5rem 0rem 0.5rem;
+      }
+
+  .recent { 
+      grid-area: recent; 
+      margin: 0rem 0.5rem 0rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    
+    
+  .cat { 
+      grid-area: cat;
+      margin: 0rem 0.5rem 0rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+    
+    }    
+  .cloud { 
+      grid-area: cloud;
+      margin: 0rem 0.5rem 0rem 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+    
+    } 
+    .blog-tags-container, .blog-categories-container {
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .blog-tags-container span.glyphicon, .blog-categories-container span.glyphicon {
+      margin-right: 20px;
+    }
+    
+    
+    .blog-post-title-archive {
+      margin-bottom: 5px;
+      font-size: 25px;
+    }
+    
+    
+    .blog-archive-title {
+      margin-bottom: 50px;
+    }  
+
+      /* Grid Card für Postinhalt*/  
+  .grid-card-container{
+    display: grid;
+    grid-template-areas: "card_title card_title" "articlecontent articlecontent" "cat-post tag-post";
+    grid-template-columns: minmax(50rem,50rem,50rem);
+    grid-template-rows: minmax(50rem,auto,50rem);
+    background-color: $overlaycolor;
+    border-radius: 1rem;
+    margin: 0rem 1.5rem 0.2rem 1.5rem;
+    
+    }
+  .cardtitle {
+    grid-area: card_title;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+  .articlecontent {
+    grid-area: articlecontent;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+
+  }
+  
+  .cat-post {
+    grid-area: cat-post;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+
+  }
+
+  .tag-post {
+    grid-area: tag-post;
+    padding: 0rem 1.5rem 0rem 1.5rem; 
+  }
