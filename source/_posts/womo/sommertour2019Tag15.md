@@ -9,9 +9,9 @@ tags: [Wohnmobil]
 series: [Sommertour 2019]
 ---
 
-### 18:23 Uhr
+##### 18:23 Uhr
 
-Nach Seeschwimmen und warmen Duschen, gab es gestern  Abendessen, Nudeln Aglio Olio, simpel aber immer wieder gut. Anschließend noch ein kleiner Spaziergang an den See, bevor wir den Abend vor dem WoMo Haben ausklingen lassen.
+Nach Seeschwimmen und warmen Duschen, gab es gestern  Abendessen, Nudeln Aglio Olio, simpel aber immer wieder gut. Anschließend noch ein kleiner Spaziergang an den See, bevor wir den Abend vor dem WoMo Haben ausklingen lassen.<!-- more -->
 Die Nacht war etwas durchwachsen, was an einer Geburtstagsfeier ein paar WoMos weiter lag, die rein feierten und bis kurz nach zwei Uhr nicht richtig Ruhe gaben.
 Der Morgen startete mit unser Morgenroutine hier, Frühstück, Frühsport, wobei wir uns wieder am Strand trafen nach Inas Lauf und meinen 1000m Schwimmen. Ina nutzte das verfügbare Mobilnetz um ein bisschen zu surfen.
 Das ist der einzige Wehmut hier, da bei uns mehr als 2G nicht raus zu holen ist aus dem Mobilnetz, sei es Vodafone oder O2.

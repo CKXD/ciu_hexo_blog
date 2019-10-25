@@ -1,0 +1,17 @@
+<div class="row">
+                <div class="col s2 offset-s2">
+                <% if (page.prev){ %>
+                    
+                        <span><a href="<%- config.root %><%- page.prev_link %>"class="waves-effect waves-light btn blue lighten-2 white-text"><i class="material-icons left">arrow_back</i>Zurück</a></span>
+                    
+                <% } %>
+                </div>
+                <div class="col s2 offset-s4">
+                <% if (page.next){ %>
+                    
+                        <span><a href="<%- config.root %><%- page.next_link %>" class="waves-effect waves-light btn blue lighten-2 white-text"><i class="material-icons right">arrow_forward</i>Nächste</a></span>
+                   
+                <% } %>
+                 </div>
+</div>
+

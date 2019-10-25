@@ -4,13 +4,13 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
- 
   max-height: 1080px;
+
 
 }
 
 body {
-    display: flex;
+    display: flexbox;
     min-height: 100vh;
     flex-direction: column;
     min-width: 420px;
@@ -22,14 +22,50 @@ body {
     }
   }
 .overlap {
-  margin-top: 0px;
+  margin-top: 20px;
   background-color: rgba(166, 201, 231, 0.6);
   border-radius: 10px;
   padding: 4px 4px 4px 4px;
   
 }
-  
+.indexcontent {
+  background-color: rgb(169, 169, 169, 0.5);
+  border-radius: 3px;
+  padding: 10px;
+  color:whitesmoke;
+  margin: 5px;
+  font-size: 1.5em;
+ 
+
+}
+.post {
+
+  display: flexbox;
+
+}  
+.pager {
+    display: flexbox;
+}
 main {
   flex: 1 0 auto;
 }
-  
+
+
+.blog-tags-container, .blog-categories-container {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.blog-tags-container span.glyphicon, .blog-categories-container span.glyphicon {
+  margin-right: 20px;
+}
+
+
+.blog-post-title-archive {
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+
+.blog-archive-title {
+  margin-bottom: 50px;
+}

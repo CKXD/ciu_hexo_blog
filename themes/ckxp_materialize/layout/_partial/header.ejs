@@ -1,54 +1,46 @@
 <body>
 
-        <header>
-          <!-- NAVIGATION -->
-          <!-- DROPDOWN --><!-- MOBILE COLLAPSE -->
-          
-            
-            <div class="navbar-fixed">  
-              
-              <nav class="transparent">
-                <div class="nav-wrapper">
-                  <div class="container">
-                    <!--  
-                    <%- image_tag('data/CIU.png', alt='Logo', height="10px") %>
-                    -->
-                      <a href="#!" class="brand-logo text-yellow text-lighten 2"><img src="../data/CIU.png" alt="Logo" srcset="" height="64px"> </a> 
-                      
-
-  
-
-                        <a href="#" data-activates="mobile-demo" class="btn-floating btn-large grey hide-on-large-only"><i class="material-icons grey lighten-3 black-text">menu</i></a>
-                        <ul id="nav-mobile" class="right hide-on-med-and-down">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="" class="dropdown-button" data-activates="dropdown1">Kategorien<i class="material-icons right">arrow_drop_down</i></a></li>
-                          <li><a href="#">Über uns</a></li>
-                        </ul>
-                    </div>  
-                </div>  
-              </nav>   
-           
-            
-           </div>
-                  <ul id="dropdown1" class="dropdown-content">
-                      <li><a href="#!">Wohnmobil</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#!">Radtourem</a></li>
-                      <li><a href="#!">Wettkämpfe</a></li>
-                      <li class="divider"></li> 
-                      <li><a href="#!">Allerlei</a></li>
-  
+ <header>
+    <!-- NAVIGATION -->
+    <!-- DROPDOWN --><!-- MOBILE COLLAPSE -->
+    
+      
+      <div class="navbar-fixed">  
+        
+        <nav class="transparent">
+          <div class="nav-wrapper">
+            <div class="container">  
+                  <a href="/" class="brand-logo text-yellow text-lighten 2"><img src="/data/CIU.png" alt="Logo" height="64px"> </a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger btn-floating btn-large grey hide-on-large-only"><i class="material-icons grey lighten-3 black-text">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Home</a></li>
+                    <li><a class='dropdown-trigger dropdown-button' href='#' data-target='dropdown1'>Kategorien<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#">Über uns</a></li>
                   </ul>
-                  <ul class="side-nav" id="mobile-demo">
-                      <li><a href="#">Start</a></li> 
-                      <li><a href="#!">Wohnmobil</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#!">Radtourem</a></li>
-                      <li><a href="#!">Wettkämpfe</a></li>
-                      <li class="divider"></li> 
-                      <li><a href="#!">Allerlei</a></li>
-                      <li><a href="#">Über uns</a></li>
-                  </ul>
-                   
-               
-      </header>
+              </div>  
+          </div>  
+        </nav>   
+      
+      
+      </div>
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="#!">Wohnmobil</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Radtourem</a></li>
+                <li><a href="#!">Wettkämpfe</a></li>
+                <li class="divider"></li> 
+                <li><a href="#!">Allerlei</a></li>
+
+            </ul>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">Start</a></li> 
+                <li><a href="#!">Wohnmobil</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Radtourem</a></li>
+                <li><a href="#!">Wettkämpfe</a></li>
+                <li class="divider"></li> 
+                <li><a href="#!">Allerlei</a></li>
+                <li><a href="#">Über uns</a></li>
+            </ul>
+  
+</header>      

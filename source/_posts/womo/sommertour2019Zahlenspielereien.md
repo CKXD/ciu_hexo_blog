@@ -32,6 +32,6 @@ Radkilometer Ina:           | 887,4 km
 Laufkilometer Ina:          | 127,7
 Schwimmkilometer Ina:       | 12,7 km 
 Trainingszeit komplett:     | 54:56 h
-Zusammen:                   | 1902 km in 97:38 h
+Zusammen:                   | 1902 km in 97:38 h    
 
 

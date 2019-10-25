@@ -1,0 +1,22 @@
+<div class="grid-card-container">
+        <div class="cardtitle">
+            <h5><a href="<%- config.root %><%- item.path %>">
+                <%- item.title || item.link%>
+            </a></h5>
+            <p> <%= item.date.format(config.date_format) %>
+                <% if(item.author) { %>
+                    von <%- item.author %>
+                <% } %>
+            </p>
+        </div>
+        <div class="articlecontent">
+            <p><%- item.content %></p>
+        </div>
+        <div class="tag-post">
+            <p><%- partial('article-tags', {item: item}) %></p>
+        </div>
+        <div class="cat-post">
+            <p><%- partial('article-categories', {item: item}) %></p>
+        </div>  
+
+</div>
